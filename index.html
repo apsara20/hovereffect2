@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover Effect Gallery</title>
+    <style>
+        .gallery {
+                        display: flex;
+                        justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+            margin: 10px;
+            margin-left: 15px;
+
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            max-width: 1200px;
+            width: 100%;
+        }
+        .gallery-item {
+            
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: all 0.5s ease-in-out;
+        }
+
+        /* Different Hover Effects */
+        .gallery-item:nth-child(1):hover img { transform: scale(3.2); }
+        .gallery-item:nth-child(2):hover img { transform: rotate(180deg); }
+        .gallery-item:nth-child(3):hover img { transform: skewX(-15deg); }
+        .gallery-item:nth-child(4):hover img { transform: skewY(15deg); }
+        .gallery-item:nth-child(5):hover img { transform: translateX(10px); }
+        .gallery-item:nth-child(6):hover img { transform: translateY(10px); }
+        .gallery-item:nth-child(7):hover img { filter: grayscale(100%); }
+        .gallery-item:nth-child(8):hover img { filter: blur(5px); }
+        .gallery-item:nth-child(9):hover img { filter: brightness(300%); }
+        .gallery-item:nth-child(10):hover img { filter: contrast(170%); }
+        .gallery-item:nth-child(11):hover img { transform: rotate(360deg); }
+        .gallery-item:nth-child(12):hover img { transform: perspective(400px) rotateY(0deg); }
+        .gallery-item:nth-child(13):hover img { transform: perspective(400px) rotateX(180deg); }
+        .gallery-item:nth-child(14):hover img { box-shadow: 10px 20px 30px rgba(156, 25, 25, 0.5); }
+        .gallery-item:nth-child(15):hover img { opacity: 0.5; }
+        .gallery-item:nth-child(16):hover img { animation: wiggle 0.5s ease-in-out infinite alternate; }
+        .gallery-item:nth-child(17):hover img { animation: shake 0.5s ease-in-out infinite alternate; }
+        .gallery-item:nth-child(18):hover img { transform: scale(1.1) rotate(5deg); }
+        .gallery-item:nth-child(19):hover img { transform: rotateY(180deg); }
+        .gallery-item:nth-child(20):hover img { transform: rotateX(180deg); }
+
+        @keyframes wiggle {
+            0% { transform: rotate(0deg); }
+            50% { transform: rotate(5deg); }
+            100% { transform: rotate(-5deg); }
+        }
+        @keyframes shake {
+            0% { transform: translateX(0); }
+            25% { transform: translateX(-5px); }
+            50% { transform: translateX(5px); }
+            75% { transform: translateX(-5px); }
+            100% { transform: translateX(5px); }
+        }
+        h1{
+            color: blueviolet;
+
+            transform: translateX(0px);
+        }
+        h1:hover{
+            color: brown;
+
+            transform: translateX(70px) ;
+        }
+    </style>
+</head>
+<body>
+
+        <div>
+            <h1 style="margin-top: 10px; text-align: center;  font-size: 50px; font-weight: bold;"> HOVER EFECT GALLERY</h1>
+        </div>
+
+
+    <div style="margin-top: 5%;" class="gallery" >
+
+<!-- 20 Images with Different Effects -->
+        <div class="gallery-item"><img src="http://www.pixelstalk.net/wp-content/uploads/2016/06/HD-Cool-3D-Backgrounds.jpg" alt="Image 1"></div>
+        <div class="gallery-item"><img src="https://www.pixelstalk.net/wp-content/uploads/2016/08/Cool-nature-backgrounds-hd-resolution-1920x1080.jpg" alt="Image 2"></div>
+        <div class="gallery-item"><img src="https://tse3.mm.bing.net/th?id=OIP.YjK9t8lLWvCcm9tF5030BwHaEo&pid=Api&P=0&h=180" alt="Image 3"></div>
+        <div class="gallery-item"><img src="http://beautifulcoolwallpapers.files.wordpress.com/2011/08/under_the_world_by_thesaladman.jpg" alt="Image 4"></div>
+        <div class="gallery-item"><img src="https://wallpaperaccess.com/full/154009.jpg" alt="Image 5"></div>
+        <div class="gallery-item"><img src="http://getwallpapers.com/wallpaper/full/0/3/5/880414-vertical-cool-background-for-desktop-1920x1200-windows-xp.jpg" alt="Image 6"></div>
+        <div class="gallery-item"><img src="https://wallpapercave.com/wp/wp7026942.jpg" alt="Image 7"></div>
+        <div class="gallery-item"><img src="https://img.freepik.com/premium-photo/adorable-cute-muslim-children-cartoon-character-3d-rendering_784625-571.jpg?w=2000" alt="Image 8"></div>
+        <div class="gallery-item"><img src="https://tse1.mm.bing.net/th?id=OIP.F0OyuuxLDW-myaT-KWxPkgHaE8&pid=Api&P=0&h=180" alt="Image 9"></div>
+        <div class="gallery-item"><img src="https://c.pxhere.com/photos/2e/3e/bloom_bunch_of_flowers_colorful_colourful_daisies_flowers-1093996.jpg!d" alt="Image 10"></div>
+        <div class="gallery-item"><img src="https://tse1.mm.bing.net/th?id=OIP.vmEe_-PYxxoZAyvuY0kzRQHaEo&pid=Api&P=0&h=180" alt="Image 11"></div>
+        <div class="gallery-item"><img src="http://1.bp.blogspot.com/-JOG6zzen7m4/U3IuTzMvPUI/AAAAAAAAFoU/AHCE4SGfg9w/s1600/Butterfly+Hd+Photos+&+Wallpapers+(1).jpg" alt="Image 12"></div>
+        <div class="gallery-item"><img src="https://tse2.mm.bing.net/th?id=OIP.B7nUyYLwdXVnvjQckrMkUwHaFn&pid=Api&P=0&h=180" alt="Image 13"></div>
+        <div class="gallery-item"><img src="https://tse3.mm.bing.net/th?id=OIP.eMhtHbsihlRSUFT_zhJn9AHaEK&pid=Api&P=0&h=180" alt="Image 14"></div>
+        <div class="gallery-item"><img src="https://wallpaperaccess.com/full/189631.jpg" alt="Image 15"></div>
+        <div class="gallery-item"><img src="https://www.technocrazed.com/wp-content/uploads/2015/12/beautiful-wallpaper-download-22.jpg" alt="Image 16"></div>
+        <div class="gallery-item"><img src="http://wonderfulengineering.com/wp-content/uploads/2014/07/Beautiful-Wallpapers-18.jpg" alt="Image 17"></div>
+        <div class="gallery-item"><img src="http://www.technocrazed.com/wp-content/uploads/2015/12/beautiful-wallpaper-download-23.jpg" alt="Image 18"></div>
+        <div class="gallery-item"><img src="http://getwallpapers.com/wallpaper/full/7/7/f/1137781-widescreen-beautiful-desktop-wallpaper-1920x1200-for-mobile.jpg" alt="Image 19"></div>
+        <div class="gallery-item"><img src="https://wallpaperaccess.com/full/632200.jpg" alt="Image 20"></div>
+     
+    </div>
+
+
+</body>
+</html>
